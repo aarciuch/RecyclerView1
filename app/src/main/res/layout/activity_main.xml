@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/editItem"
+            style="@style/artWidget"
+            android:hint="wpisz daną"
+            android:background="@color/yellow"
+            android:padding="4dp" />
+
+        <Button
+            android:id="@+id/buttonDodaj"
+            style="@style/artWidget"
+            android:text="dodaj" />
+
+        <Button
+            android:id="@+id/buttonContext"
+            style="@style/artWidget"
+            android:text="Context Menu" />
+
+        <Button
+            android:id="@+id/buttonZapisz"
+            style="@style/artWidget"
+            android:text="zapisz" />
+
+        <Button
+            android:id="@+id/buttonWczytaj"
+            style="@style/artWidget"
+            android:text="Wczytaj" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:itemCount="10"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+    </LinearLayout>
+</layout>
